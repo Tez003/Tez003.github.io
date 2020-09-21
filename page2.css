@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Give You Glory", cursive;
+}
+
+body {
+  background: #222;
+  color: whitesmoke;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.text {
+  order: -1;
+  flex-basis: 24rem;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  padding-right: 5rem;
+}
+
+.images {
+  position: relative;
+  flex-basis: 58rem;
+}
+
+.images img {
+  position: relative;
+  width: 18.75rem;
+  height: 12.5rem;
+  border: 1px solid #111;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+
+.images img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.images img.zoom {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+  border: 1px solid transparent;
+  z-index: 99;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="page2.css">
+    </head>
+    <body>
+    
+        <div class="wrapper">
+  <div class="images">
+    <img src="https://source.unsplash.com/1600x900/?rainforest">
+    <img src="https://source.unsplash.com/1600x900/?trees">
+    <img src="https://source.unsplash.com/1600x900/?rocks">
+    <img src="https://source.unsplash.com/1600x900/?mountains">
+    <img src="https://source.unsplash.com/1600x900/?water">
+    <img src="https://source.unsplash.com/1600x900/?nature">
+  </div>
+  <div class="text">
+    <p>The picture that you took with your camera is the imagination you want to create with reality.</p>
+    <a href="Black-and-white.html" style="font-size: 1.2vw; position: absolute; bottom: 25ox; left: 40px; text-decoration:none; color: aliceblue;">Art Gallery</a>
+  </div>
+</div>
+        
+        <script>
+        
+            $(".images img").click(function () {
+  $(this).addClass("zoom");
+});
+
+$(".images img").mouseleave(function () {
+  $(this).removeClass("zoom");
+});
+
+        </script>
+    </body>
+</html>
